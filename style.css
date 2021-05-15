@@ -76,7 +76,7 @@ body {
 
 #Bio{
   background-image: url(Assests/Images/UconnSign.jpg);
-  background-size:
+  /* background-size: */
   background-position: left;
   color: white;
 }
