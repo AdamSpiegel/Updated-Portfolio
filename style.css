@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.About {
+  align-content: center;
+}
+
+#MyProjects {
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row {
+  color: white;
+  text-align: center;
+}
+
+.card-header {
+  background-color: darkgrey;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+  padding-top: 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav {
+  width: 100%;
+}
+
+#ProfilePhoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+  padding-bottom: 20px;
+  border-radius: 30px;
+}
+
+#ContactInfo {
+  text-align: center;
+  background-color: darkgrey;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#Email, #Github, #Linkedin {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* #Github {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#Linkedin {
+    text-align: right;
+} */
+
+#Bio{
+  background-image: url(Assests/Images/UconnSign.jpg);
+  background-size:
+  background-position: left;
+  color: white;
+}
+
+.card-body {
+  background-color: navy;
+  color: white;
+}
+
+.modal-header {
+  display: inline-block;
+}
+
+.FooterLinks {
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+}
+
+/* Media Queries */
+/*Tablets*/
+@media screen and (max-width: 992px) {
+}
+
+/* Large Smarthphones */
+@media screen and (max-width: 768px) {
+}
+
+/* Small Smartphones */
+
+@media screen and (max-width: 576px) {
+}

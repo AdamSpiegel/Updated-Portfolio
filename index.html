@@ -5,106 +5,180 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="Assests/Images/icons8-laptop-96 (1).png">
   <title>Adam Spiegel Portfolio</title>
   <!-- BootStrap CSS File -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!-- Font Awesome API -->
+  <script src="https://kit.fontawesome.com/6b0ee879fc.js" crossorigin="anonymous"></script>
   <!-- Custom CSS Styling Sheet -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+
   <!-- BootStrap Nav Bar -->
-  <div class="card text-center">
+  <div class="card text-center border-0">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item1">
           <a class="nav-link active" href="#About Me">About Me</a>
         </li>
         <li class="nav-item2">
-          <a class="nav-link" href="#My Projects">My Projects</a>
+          <a class="nav-link" href="#MyProjects">My Work</a>
         </li>
         <li class="nav-item3">
-          <a class="nav-link" href="Assests/Spiegel, Adam UConn Resume.pdf">My Resume</a>
+          <a class="nav-link" href="Assests/Spiegel, Adam UConn Resume.pdf" target="_blank">My Resume</a>
         </li>
         <li class="nav-item4">
-          <a class="nav-link" href="#Contact Info">Contact Info</a>
+          <a class="nav-link" href="#ContactInfo">Contact Info</a>
         </li>
+        <img src=Assests\Images\UconnLogo.jpg id="Uconn Logo" style="width:60px;height:50px;" class="align-self-end">
       </ul>
     </div>
-    <div class="card-body">
-      <img src=Assests\Images\UconnLogo.jpg alt="Uconn Logo" style="width:250px;height:200px;" class="left">
-      <h2 class="card-title">Adam Spiegel Portfolio</h2>
-      <p class="card-text">UConn Coding Bootcamp Student Portfolio</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+    <div class="card-body" id="Bio">
+      <h1 class="card-title"><u>Adam Spiegel Portfolio</u></h1>
+      <img src="Assests/Images/Profile Photo.jpg" id="ProfilePhoto" class=center>
+      <h2>
+        <p class="card-text">UConn Coding Bootcamp Student Portfolio</p>
+      </h2>
+
+      <!-- Brand Statement and/or Biorgraphy Modal -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Brand Statement
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Declaration of Intent</h4>
+          </div>
+          <div class="modal-body">
+            Brand Statement is currently being re-written with the feedback from my CMA.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <main>
+
     <!-- Bootstrap Cards (6) to hold project content -->
+    <section id="MyProjects">
+      <h1>Projects and Applications</h1>
+    </section>
+
     <div class="row">
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body" style=background-color:gold>
-            <h5 class="card-title">Group Project #1</h5>
-            <p class="card-text">Recipe and Cocktail Generator!</p>
-            <a href="https://adamspiegel.github.io/Group-Project-1/" class="btn btn-primary">Check It Out!</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>Group Project #1 - Recipe & Cocktail Generator</u></h5>
+            <p class="card-text">An automatic drink and food recipe generator which takes into account the user's
+              alochol and food selections, and provides cocktail/meal recipes!</p>
+            <a href="https://adamspiegel.github.io/Group-Project-1/" class="btn btn-secondary">Check It Out!</a>
 
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>JavaScript Password Generator</u></h5>
+            <p class="card-text">An automatic password generator which utilized 8-128 characters, and a multitude of
+              characters, to provide the user with a useable password.</p>
+            <a href="https://adamspiegel.github.io/JavaScript-Password-Generator/" class="btn btn-secondary">JS Password
+              Generator</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>Horiseon (Client) Code Refactor</u></h5>
+            <p class="card-text">A Code Refactor project with the goal to clean the users' code, and create a user
+              friendly interface.</p>
+            <a href="https://adamspiegel.github.io/HTML-CSS-and-Git-Code-Refactor/" class="btn btn-secondary">Client
+              Code Refactor</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>Coming Soon!</u></h5>
+            <p class="card-text">UConn Coding Bootcamp: Group Project #2 - A collaborative project to be completed on
+              July 8, 2021</p>
+            <a href="#" class="btn btn-secondary">Group Project #2</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>Coming Soon!</u></h5>
+            <p class="card-text">UConn Coding Bootcamp: Fitness Tracker - To be completed on July 22, 2021</p>
+            <a href="#" class="btn btn-secondary">Fitness Tracker</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body" style=background-color:navy>
+            <h5 class="card-title"><u>Coming Soon!</u></h5>
+            <p class="card-text">UConn Coding Bootcamp: E-Commerce Back End - To be complete June 22, 2021</p>
+            <a href="#" class="btn btn-secondary">E-Commerce</a>
           </div>
         </div>
       </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
+
+    <footer id="ContactInfo">
+
+      <div id="Phone">
+        <b><u>Contact Information</u></b>
+        <p><b>Adam Spiegel</b></p>
+        <p>Phone - (860) 212-7893</p>
+      </div>
+
+      <div class="FooterLinks">
+        <div id="Email">
+          <i class="far fa-envelope fa-3x"></i>
+          <p><a href="mailto:AdamSpiegel23@gmail.com">Email</a></p>
+        </div>
+
+        <div id="Github">
+          <i class="fab fa-github fa-3x"></i>
+          <p><a href="https://github.com/AdamSpiegel">Github</a></p>
+        </div>
+
+        <div id="Linkedin">
+          <i class="fab fa-linkedin fa-3x"></i>
+          <p><a href="https://www.linkedin.com/in/adam-spiegel-3086687">Linkedin</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery & JavaScript (Use-Modal) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
